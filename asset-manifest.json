@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/myblogapp/static/css/main.5d0e7551.css",
+    "main.js": "/myblogapp/static/js/main.91a76965.js",
+    "static/media/TABASCO.jpg": "/myblogapp/static/media/TABASCO.06b464bbe7d97101fb9a.jpg",
+    "static/media/Heinekicks.jpg": "/myblogapp/static/media/Heinekicks.027ece53b55b83431f7e.jpg",
+    "static/media/Cannabis.jpg": "/myblogapp/static/media/Cannabis.c283b773645506559d57.jpg",
+    "static/media/Sneakers.jpeg": "/myblogapp/static/media/Sneakers.397adbcd952964476593.jpeg",
+    "static/media/Oreo.jpg": "/myblogapp/static/media/Oreo.9fdde7ffc7c6218c6bc8.jpg",
+    "index.html": "/myblogapp/index.html",
+    "main.5d0e7551.css.map": "/myblogapp/static/css/main.5d0e7551.css.map",
+    "main.91a76965.js.map": "/myblogapp/static/js/main.91a76965.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d0e7551.css",
+    "static/js/main.91a76965.js"
+  ]
+}
