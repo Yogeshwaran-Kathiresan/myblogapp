@@ -1,38 +1,241 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header */
+
+header {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-menu li {
+  margin-right: 20px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.search-bar input[type="text"] {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.hamburger-icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .selected-image {
+    width: 100%;
+  }
+
+  .hamburger-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .hamburger-icon i {
+    font-size: 20px;
+    color: white;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+/* Body */
+
+.blog-heading {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.selected-blog-card {
+  padding: 40px 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.selected-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 1.2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.selected-image {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.selected-content {
+  text-align: justify;
+  width: 95%;
+}
+
+.blog-heading>p {
+  margin-top: 0;
+}
+
+.blog-card {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-border {
+  border-left: 6px solid grey;
+  margin-top: 8px;
+  padding-right: 10px;
+  height: 22px;
+}
+
+.topic {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-right: 10px;
+}
+
+.blog-list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.portlet {
+  width: 350px;
+  padding: 10px;
+  cursor: pointer;
+  margin-right: 18px;
+  margin-left: 10px;
+}
+
+.blog-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.portlet-footer {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+
+  .selected-image {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+
+/* Footer */
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.footer-logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.footer-links li {
+  margin-right: 20px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-icon {
+  margin-right: 5px;
+}
+
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    margin-top: 10px;
+  }
+
+  .footer-links ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links li {
+    margin: 10px 0;
   }
 }
